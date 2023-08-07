@@ -16,6 +16,7 @@ class Config:
     sql_user: str = "root"
     sql_db: str = "rosu"
     sql_pass: str = "password"
+    redis_host: str = "localhost"
     meili_direct: bool = False
     meili_url: str = "http://127.0.0.1:7700"
     meili_key: str = ""
