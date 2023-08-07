@@ -5,6 +5,8 @@ bcrypt==4.0.1
 Brotli
 cchardet
 databases[asyncmy]==0.5.5
+# databases does not provide extra for asyncmy!
+asyncmy
 fastapi
 meilisearch-python-async
 orjson
