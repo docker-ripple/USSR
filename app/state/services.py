@@ -9,7 +9,7 @@ import meilisearch_python_async
 
 from config import config
 
-redis: aioredis.Redis = aioredis.from_url("redis://localhost")
+redis: aioredis.Redis = aioredis.from_url(f"redis://{config.redis_host}")
 
 url = databases.DatabaseURL(
     "mysql+asyncmy://{username}:{password}@{host}:3306/{db}".format(
