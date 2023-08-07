@@ -11,6 +11,7 @@ RUN DEBIAN_FRONTEND=noninteractive TZ=$timezone \
 
 COPY requirements.txt requirements.txt
 RUN python3.9 -m pip install -r requirements.txt
+RUN python3.9 -m pip install asyncmy
 
 COPY . .
 CMD python3.9 main.py
