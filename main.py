@@ -26,7 +26,7 @@ def main() -> int:
         log_level=logging.WARNING,
         server_header=False,
         date_header=False,
-        host="0.0.0",
+        host="0.0.0.0",
         port=config.port,
     )
 
